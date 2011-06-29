@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Give me a title</title>
+	<title>A Coworking place in Cluj... To happen!</title>
 
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -12,7 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="css/style.css">
-
+	
+	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 	<script src="js/libs/modernizr-2.0.6-custom.min.js"></script>
 	<script type="text/javascript">
 		WebFontConfig = {
@@ -27,23 +28,78 @@
 			wf.async = 'true';
 			var s = document.getElementsByTagName('script')[0];
 			s.parentNode.insertBefore(wf, s);
-		})(); 
-    </script>
+		})();
+		var twidget = {
+			version: 2,
+			type: 'search',
+			search: '#clujcowork',
+			interval: 6000,
+			title: 'Tweets about Cluj Coworking Place',
+			subject: '#clujcowork',
+			width: 'auto',
+			height: 52,
+			theme: {
+				shell: {
+				background: '#5b91c7',
+				color: '#ffffff'
+				},
+				tweets: {
+				background: '#ffffff',
+				color: '#52585e',
+				links: '#346698'
+				}
+			},
+			features: {
+				scrollbar: false,
+				loop: true,
+				live: true,
+				hashtags: true,
+				timestamp: true,
+				avatars: true,
+				toptweets: true,
+				behavior: 'default'
+			}
+		};
+		var toggle_form = function() {
+			var e = document.getElementById('contact-form');
+			if( e.style.display == 'block' )
+				e.style.display = 'none';
+			else
+				e.style.display = 'block';
+		};
+	</script>
 
-	
 </head>
 
 <body>
 <div id="container" class="wrap">
-	     
-
-	<h1>Cluj Coworking Office</h1>
-	<h2>Bring your awesome!</h2>
 	
-	
-	<p>Coming very soon... <a href="#" class="tw">tweet!</a></p>
-
-	
+	<div class="box">
+		<h1>Cluj Coworking Office</h1>
+		<h2>Prima locație de coworking din Cluj-Napoca!</h2>
+		
+		
+		<p>Vara lui 2011... <a href="http://twitter.com/share?text=%23clujcowork" class="tw">tweet!</a></p>
+		
+		<p>* * *</p>
+		
+		<div id="twidget">
+			<script type="text/javascript">new TWTR.Widget(twidget).render().start();</script>
+		</div>
+		
+		<p>* * *</p>
+		
+		<ul class="links">
+			<li><a href="http://en.wikipedia.org/wiki/Coworking">Coworking?!</li>
+			<li><a href="http://twitter.com/#!/Suscov/clujcowork">People behind</a></li>
+			<li><a href="javascript: toggle_form();">Contact</a></li>
+			<li><a href="http://coworktm.com/">Coworking Timișoara</a></li>
+		</ul>
+		
+		<div id="contact-form">
+			<iframe src="https://spreadsheets.google.com/spreadsheet/embeddedform?formkey=dFdHN2Y5Y1VURWlEV1A5TDJUUnhkRmc6MQ" ></iframe>
+		</div>
+	</div>
 	
 </div> <!--! end of #container -->
 
