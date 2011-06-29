@@ -1,0 +1,67 @@
+/* Primary styles
+---------------------------------------- */
+body {
+background: #262525 image-url('old_mathematics.png') center 0 repeat;
+font-size: $base-font-size; line-height: $base-line-height;
+padding: 100px 0 50px 0;
+text-align: center; }
+
+body, select, input, textarea { color: $bw_4; }
+
+a { color: $blue; text-decoration: none; }
+	a:hover { text-decoration: none; }
+
+	/* Typography
+	---------------------------------------- */
+	body, input, textarea, button  {
+		& { @include sans-family-fallback; }
+	    .wf-active & { @include sans-family; }
+	}
+	
+	h2 {
+	//	& { @include serif-family-fallback; }
+	//    .wf-active & { @include serif-family; }
+	}
+	
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+	
+.hidden { display: none; visibility: hidden; } 	
+		
+.wrap {
+position: relative;
+width: 960px; margin: 0 auto; @include pie-clearfix; }
+
+#containter {}
+
+// @import "components";
+
+
+
+/* Masthead
+---------------------------------------- */
+#masthead { }
+
+	
+	h1 {
+	font-size: 60px; line-height: 70px;
+	color: $blue; text-shadow: #fff 0 -1px 0, #346698 0 1px 0, #346698 0 2px 0, #275380 0 3px 0, rgba($bw_3,0.7) 0 5px 3px;
+	margin: 0 0 35px 0; }
+	
+	h2 {
+	font-size: 20px; line-height: 30px;
+	font-weight: normal;  text-transform: lowercase;
+	margin: 0 0 10px 0; }
+	
+	p { margin: 0; }
+	
+	.tw {
+	position: relative;
+	display: inline-block; width: 26px; height: 21px;
+	background: image-url('tw.png') 0 3px no-repeat; text-indent: -9999px; margin: 0 0 0 2px; font-style: italic;
+	@include transition-property(all);
+	@include transition-duration(0.05s);
+	@include transition-timing-function(ease-in);
+	
+		&:hover { background-position: 1px 0; text-indent: 29px; }
+	}

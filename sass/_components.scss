@@ -1,0 +1,16 @@
+
+.menu {
+	
+	.branch { float: left; position: relative; }
+	
+	.trig { display: block; }
+	
+	.items { display: none; position: absolute; white-space: nowrap; z-index: 10; }
+	.open .items { display: block; }
+}
+
+.menu-clean {
+@extend .menu;
+
+	.branch:hover .items { display: block; }
+}
