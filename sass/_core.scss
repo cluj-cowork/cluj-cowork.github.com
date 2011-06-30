@@ -9,7 +9,7 @@ text-align: center; }
 body, select, input, textarea { color: $bw_4; }
 
 a { color: $blue; text-decoration: none; }
-	a:hover { color: $green; text-decoration: none; }
+	a:hover { color: $green_d1; text-decoration: none; }
 
 	/* Typography
 	---------------------------------------- */
@@ -58,7 +58,7 @@ width: 640px; margin: 0 auto;
 		padding: 5px 0; }	
 		
 		a:hover { 
-		text-decoration: none;
+		text-decoration: none; color: $green;
 	//	background: image-url('wiki.png') right 10px no-repeat; 
 		text-shadow:  #fff 0 -1px 0, $green_d1 0 1px 0, $green_d1 0 2px 0, $green_d1 0 3px 0, rgba($bw_3,0.7) 0 3px 2px; }
 			
@@ -90,7 +90,7 @@ width: 640px; margin: 0 auto;
 	font-size: 24px; margin: 40px 0 0 0; 
 	
 		a { color: $blue_d1; }
-		a:hover { color: $green; }
+		a:hover { color: $green_d1; }
 	} 
 	
 	ul, #sf-form { margin-top: 80px; }
