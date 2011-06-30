@@ -87,7 +87,8 @@ background: image-url('tw.png') 0 0 no-repeat; text-indent: -9999px; margin: 0 0
 font-size: 24px; margin: 40px 0 0 0; 
 
 	a { color: $blue_d1; }
-	a:hover { color: $green_d1; }
+	a:hover, a.opened { color: $green_d1; }
+	 a.opened { cursor: default; }
 } 
 
 ul, #sf-form { margin-top: 80px; }

@@ -8,6 +8,7 @@
 			
 			$('.contact').children().click(function(e){ 
 				e.preventDefault();
+				$(this).addClass('opened')
 				$('#ss-form').show(); 
 			});
 			
