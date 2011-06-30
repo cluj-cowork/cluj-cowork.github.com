@@ -3,13 +3,13 @@
 body {
 background: #F1F4F5 image-url('old_mathematics.png') center 0 repeat;
 font-size: $base-font-size; line-height: $base-line-height;
-padding: 100px 0 50px 0;
+padding: 100px 0 150px 0;
 text-align: center; }
 
 body, select, input, textarea { color: $bw_4; }
 
 a { color: $blue; text-decoration: none; }
-	a:hover { text-decoration: none; }
+	a:hover { color: $green; text-decoration: none; }
 
 	/* Typography
 	---------------------------------------- */
@@ -22,6 +22,8 @@ a { color: $blue; text-decoration: none; }
 	//	& { @include serif-family-fallback; }
 	//    .wf-active & { @include serif-family; }
 	}
+
+p { margin: 0; }
 	
 
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
@@ -30,38 +32,116 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin:
 		
 .wrap {
 position: relative;
-width: 960px; margin: 0 auto; @include pie-clearfix; }
+width: 640px; margin: 0 auto; 
+//max-width: 100%;
+@include pie-clearfix; }
 
-#containter {}
 
 // @import "components";
+
 
 
 
 /* Masthead
 ---------------------------------------- */
 #masthead { }
-
 	
 	h1 {
 	font-size: 60px; line-height: 70px;
-	color: $blue; text-shadow: #fff 0 -1px 0, #346698 0 1px 0, #346698 0 2px 0, #275380 0 3px 0, rgba($bw_3,0.7) 0 5px 3px;
-	margin: 0 0 35px 0; }
+	color: $blue; text-shadow: #fff 0 -1px 0, $blue_d1 0 1px 0, $blue_d1 0 2px 0, $blue_d2 0 3px 0, rgba($bw_3,0.7) 0 3px 2px;
+	margin: 0 0 35px 0; 
+	
+		a { display: inline-block;
+		@include transition-property(color);
+		@include transition-duration(0.05s);
+		@include transition-timing-function(ease-in);
+		padding: 5px 0; }	
+		
+		a:hover { 
+		text-decoration: none;
+	//	background: image-url('wiki.png') right 10px no-repeat; 
+		text-shadow:  #fff 0 -1px 0, $green_d1 0 1px 0, $green_d1 0 2px 0, $green_d1 0 3px 0, rgba($bw_3,0.7) 0 3px 2px; }
+			
+		a:active {
+		@include transition-duration(0.03s);
+		
+		position: relative; top: 2px;
+		text-shadow: rgba(#fff,0.8) 0 -1px 0, $blue_d2 0 1px 0, rgba($bw_3,0.4) 0 1px 2px; }
+	}
 	
 	h2 {
 	font-size: 20px; line-height: 30px;
-	font-weight: normal;  text-transform: lowercase;
+	font-weight: normal; 
 	margin: 0 0 10px 0; }
 	
-	p { margin: 0; }
 	
 	.tw {
 	position: relative;
-	display: inline-block; width: 26px; height: 21px;
-	background: image-url('tw.png') 0 3px no-repeat; text-indent: -9999px; margin: 0 0 0 2px; font-style: italic;
-	@include transition-property(all);
-	@include transition-duration(0.05s);
-	@include transition-timing-function(ease-in);
+	display: inline-block; width: 25px; height: 18px;
+	background: image-url('tw.png') 0 0 no-repeat; text-indent: -9999px; margin: 0 0 0 2px; font-style: italic;
+
 	
-		&:hover { background-position: 1px 0; text-indent: 29px; }
+		&:hover { background-position: 0 -20px; text-indent: 29px; text-decoration: none; }
 	}
+	
+	
+	
+	.contact { 
+	font-size: 24px; margin: 40px 0 0 0; 
+	
+		a { color: $blue_d1; }
+		a:hover { color: $green; }
+	} 
+	
+	ul, #sf-form { margin-top: 80px; }
+	
+	
+	#ss-form {
+	display: none;
+	text-align: left;
+	position: relative;
+	background: #fff image-url('b.png') center 0 repeat;
+	margin: 20px 80px 0 80px; padding: 29px 30px 40px 30px;
+	border-top: 1px solid #fff; 
+	@include box-shadow(rgba($bw_4,0.3) 0 1px 2px);
+		
+		.no-js, &.open { display: block; }
+
+		-webkit-animation-name: march-up;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+
+		&:after {
+		z-index: -1;
+		position: absolute; bottom: 0; left: 3%;
+		display: block; width: 94%; height: 10px;  content: '';
+
+	//	@include box-shadow(rgba($bw_4,0.7) 1px 0 5px);
+	//	@include border-radius(20%, 5px);
+		}
+		
+
+		p { border-bottom: 1px dotted $bw_9; padding: 10px 0; }
+	
+		
+		label { width: 130px; float: left; padding: 5px 0; margin: 0 10px 0 0; cursor: pointer; text-align: right;	 }
+		
+		input, textarea {
+		width: 270px; padding: 4px; border: 1px dotted $blue;
+		
+			&:focus { border-style: solid; }
+		}
+		
+		button {
+		margin: 20px 0 0 140px; }
+
+	}
+	
+	li {
+	display: inline; padding-left: 30px;
+	
+		&:first-child { padding: 0; }
+	}
+	
+	
