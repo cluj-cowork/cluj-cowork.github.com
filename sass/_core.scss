@@ -99,7 +99,7 @@ display: none;
 text-align: left;
 position: relative;
 background: #fff image-url('b.png') center 0 repeat;
-margin: 20px 75px 0 75px; padding: 29px 30px 40px 30px;
+margin: 20px 75px 0 75px; padding: 19px 30px 40px 30px;
 border-top: 1px solid #fff; 
 @include box-shadow(rgba($bw_4,0.3) 0 1px 2px);
 	
@@ -122,6 +122,7 @@ border-top: 1px solid #fff;
 
 	p { border-bottom: 1px dotted $bw_9; padding: 10px 0; }
 
+	.haz-form { text-align: center; padding-bottom: 20px; }  
 	
 	label { width: 140px; float: left; padding: 5px 0; margin: 0 10px 0 0; cursor: pointer; text-align: right;	 }
 	
