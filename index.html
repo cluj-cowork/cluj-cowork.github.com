@@ -1,103 +1,167 @@
 <!doctype html>
-<!--[if lt IE 9]> <html class="no-js lte-ie8" lang="en"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>A Coworking place in Cluj... To happen!</title>
-
-
+	<title>First Cluj Coworking Space</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<script src="js/libs/modernizr-2.0.6-custom.min.js"></script>
-	<script type="text/javascript">
-		WebFontConfig = {
-				typekit: {
-				id: 'nuw2txy'
-			}
-		};
-		(function() {
-			var wf = document.createElement('script');
-			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-			wf.type = 'text/javascript';
-			wf.async = 'true';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(wf, s);
-		})();
-
-	</script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/libs/modernizr.h5bp.custom.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
 </head>
-
 <body>
-<div class="wrap">
-	
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="span3 logo">
+          <h1><span class="cluj">Cluj</span> Cowork</h1>
+          <h5>Hosted by RubyTribe</h5>
+        </div>
+        <div class="span4">&nbsp;</div>
+        <div class="span5 info">
+          <h3>First coworking space in Cluj-Napoca, Transilvania</h3>
+          <p>
+            <a href="http://twitter.com/clujcowork">@clujcowork</a>
+          </p>
+        </div>
+      </div>
+    </header>
+    <div class="row">
+      <div id="cowork-slides" class="carousel slide span12">
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="/img/cluj.jpg" alt="">
+            <div class="carousel-caption">
+              <h4>Some Slide Caption Title</h4>
+              <p>>Some caption</p>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#cowork-slides" data-slide="prev">‹</a>
+        <a class="right carousel-control" href="#cowork-slides" data-slide="next">›</a>
+      </div>
+    </div> <!-- #cowork-slides -->
 
-	<h1>Ruby Tribe <a href="http://en.wikipedia.org/wiki/Coworking" title="wut?">Coworking</a></h1>
-	<h2>Primul spațiu de <em>coworking</em> din Cluj-Napoca!</h2>
-	
-	
-	<p class="btw">Ne găsiți pe <a href="http://maps.google.com/maps/place?cid=9965436087355427952" title="">str. Emil Isac 23</a>. Pics soon! <a href="http://twitter.com/share?text=Ni%20m%C4%83%21%20%23clujcowork http://cluj-cowork.github.com" class="tw">tweet!</a></p>
+    <div class="well whatsallabout row">
+      <div class="span4">
+        <h3>A look inside</h3>
+          <iframe src="http://player.vimeo.com/video/31338484?title=0&amp;byline=0&amp;portrait=0&amp;color=C00000" width="100%" height="50%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </div>
+      <div class="span4">
+        <ul class="thumbnails">
+          <li class="span2">
+            <a href="#" class="thumbnail">
+              <img src="http://placehold.it/260x180" alt="">
+            </a>
+          </li>
+          <li class="span2">
+            <a href="#" class="thumbnail">
+              <img src="http://placehold.it/260x180" alt="">
+            </a>
+          </li>
+          <li class="span2">
+            <a href="#" class="thumbnail">
+              <img src="http://placehold.it/260x180" alt="">
+            </a>
+          </li>
+          <li class="span2">
+            <a href="#" class="thumbnail">
+              <img src="http://placehold.it/260x180" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="span3">
+        <h3>What is Coworking?</h3>
+        <p>
+          CoWorking is a community endeavor where multiple entrepreneurs, 
+          small business owners, freelancers, and creative professionals 
+          share office space, ideas, visions, dreams, and more. 
+        </p>
+        <p>
+          CoWorking is a fresh and innovative way to work that encourages both 
+          creativity and productivity while providing a respite from 
+          cluttered home offices, busy cafe’s, and other stressful work spaces.
+          With a minimal financial commitment, your business is empowered 
+          by a connection with other inspiring people.   
+        </p>
+      </div>
+    </div>
+    <div class="details row">
+      <div class="span5">
+        <h2>Perks</h2>
+        <ul>
+          <li>Conveniently located right in downtown of Cluj-Napoca, next to the Technical University and close to Piața Muzeului</li>
+          <li>Work among a group of community-minded entrepreneurs and freelancers passionate about their work</li>
+          <li>Beautiful and Historical space</li>
+          <li>Conference room: studio for brainstorming, collaboration, and client meetings</li>
+          <li>WiFi internet access (fiber connection with guaranteed speed)</li>
+          <li>Fully furnished office space including desk, chair, and personal storage space</li>
+        </ul>
+      </div>
+      <div class="span3">
+        <h2>Price</h2>
+        <h4>Full Time &mdash; only 140&euro;</h4>
+        <span class="help-block">
+          <strong>First month offer: 120&euro;!</strong>
+        </span>
+        <ul>
+          <li>Hot seat (desk/chair/storage space)</li>
+          <li>All utilities, internet, and amenities included</li>
+          <li>Unlimited access to the conference room</li>
+          <li>Fresh coffee and fruits</li>
+        </ul>
+        <a href="#" class="btn small">
+          <i class="icon-envelope"></i>
+          Get in touch!
+        </a>
+      </div>
+      <div class="span4">
+        <h2>How to find us</h2>
+        <iframe width="100%" height="50%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.ro/maps?cid=9965436087355427952&amp;ll=46.771203,23.584557&amp;z=15&amp;output=embed"></iframe>
+      </div>
+    </div> <!-- .details -->
 
-	
-	<p class="contact"><a href="https://spreadsheets.google.com/spreadsheet/viewform?pli=1&amp;formkey=dFdHN2Y5Y1VURWlEV1A5TDJUUnhkRmc6MQ#gid=0">Ai vrea să lucrezi alături de noi?</a></p>
-	
-	
-		
-	<!-- fugly google code -->
-	<form action="https://spreadsheets.google.com/spreadsheet/formResponse?formkey=dFdHN2Y5Y1VURWlEV1A5TDJUUnhkRmc6MQ&amp;theme=0AX42CRMsmRFbUy03NTAzM2Q4My03ODU1LTQ2NzItODI2YS1kZmU5YzdiMzZjOGQ&amp;ifq" method="POST" id="ss-form">
+    <hr>
 
-		<p>
-			<label for="entry_0">Numele <span class="ss-required-asterisk">*</span></label> 
-			<input type="text" name="entry.0.single" id="entry_0" required />
-		</p>
-
-		<p>
-			<label for="entry_1">Ocupația <span class="ss-required-asterisk">*</span></label>
-			<input type="text" name="entry.1.single" id="entry_1" required />
-		</p>
-
-		<p>
-			<label for="entry_2">Email/Telefon/Skype *</label> 
-			<input type="text" name="entry.2.single" id="entry_2" required />
-		</p>
-		
-		<p>
-			<label for="entry_3">Mesajul <span class="ss-required-asterisk">*</span></label> 
-			<textarea name="entry.3.single" rows="8" cols="30" id="entry_3" required></textarea>
-		</p>
-
-		<input type="hidden" name="pageNumber" value="0">
-		<input type="hidden" name="backupCache" value="">
-
-		<button type="submit" name="submit">Trimite</button>
-	</form>
-	
-	<ul>
-		<li><a href="http://twitter.com/#!/Suscov/clujcowork/members">Colegi</a></li>
-		<li><a href="http://coworktm.com/">Coworking Timișoara</a></li>
-	</ul>
-
-	
-</div> <!--! end of #container -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.1.min.js"><\/script>')</script>
-
-	<script src="js/behave.js"></script>
-
-	<script>
-		var _gaq=[['_setAccount','UA-24265035-1'],['_trackPageview'],['_trackPageLoadTime']];
-		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-		s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
-
-	<a class="github" href="https://github.com/cluj-cowork"><img src="https://d3nwyuy0nl342s.cloudfront.net/img/abad93f42020b733148435e2cd92ce15c542d320/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
+    <footer>
+      <div class="row">
+        <div class="span6">
+          &nbsp;
+        </div>
+        <div class="location span6">
+          <div class="vcard">
+            <div class="adr">
+              <div class="street-address">23 Emil Isac</div>
+              <span class="locality">Cluj-Napoca</span>,
+              <span class="region">Cluj</span>,
+              <span class="postal-code">400023</span>
+              <span class="country-name">Romania</span>
+            </div>
+            <div class="tel">+4076666666</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div> <!-- .container -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
 </body>
 </html>
-	
