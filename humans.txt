@@ -3,41 +3,38 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  Creators: @clujcowork inhabitants
+  Site: http://clujcowork.ro
+  Twitter: @clujcowork
+  Location: Cluj-Napoca, Transilvania
 
 /* THANKS */
-  Names (& URL):
+  GitHub: http://github.com
+  Nanoc: http://nanoc.stoneship.org
+  Twitter Bootstrap: http://twitter.github.com/bootstrap
+  Pics: Lucian Indrei
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+  Components: jQuery
+  Source: https://github.com/cluj-cowork/cluj-cowork.github.com
 
+    .~MMMMMMMMM:   MMMM         MMMM       MMMM~      MMMM
+  .8MMMMMMMMMMMM   MMMM         MMMM       MMMM~      MMMM
+ .NMMMMD     ~O    MMMM         MMMM       MMMM~      MMMM
+ .MMMM             MMMM         MMMM       MMMM~      MMMM
+.?MMMM             MMMM         MMMM       MMMM~      MMMM
+ ZMMMM             MMMM         MMMM       MMMM~      MMMM
+ ZMMMM             MMMM         MMMM       MMMM~      MMMM
+ +MMMM             MMMM         MMMM       MMMM~      MMMM
+ .MMMM+            MMMM         MMMM       MMMM,      MMMM
+  OMMMMM    .MM+   MMMM         MMMMM$   :MMMMM      MMMMM
+  .OMMMMMMMMMMMM   MMMMMMMMMMM   MMMMMMMMMMMMM   MMMMMMMM~
+    .:MMMMMMMMM    MMMMMMMMMMM    .MMMMMMMMM.    MMMMMMM  
 
-
-                               -o/-
-                               +oo//-
-                              :ooo+//:
-                             -ooooo///-
-                             /oooooo//:
-                            :ooooooo+//-
-                           -+oooooooo///-
-           -://////////////+oooooooooo++////////////::
-            :+ooooooooooooooooooooooooooooooooooooo+:::-
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-
-                     -:+ooooooooooooooooo+:://////:--
-                       /ooooooooooooooooo+//////:-
-                      -ooooooooooooooooooo////-
-                      /ooooooooo+oooooooooo//:
-                     :ooooooo+/::/+oooooooo+//-
-                    -oooooo/::///////+oooooo///-
-                    /ooo+::://////:---:/+oooo//:
-                   -o+/::///////:-      -:/+o+//-
-                   :-:///////:-            -:/://
-                     -////:-                 --//:
-                       --                       -:
+  OO888O  O888OO  ~OO   8O   8O  O888OO   OOOOO8  O8  IO8 
+ OOO     O8,  $OO  O8  OOO  ZO  O8,  $OO  OO  8O: O8 ,OO  
+ 8O      OZ    O8  7O~ OOOO O8  OZ    O8  O8  O8  OO:OO   
+ 8O      O$    O8   887O OO:8O  O$    O8  OOOO8   OO OO   
+ 88,     OO    O8   OOO   88O   OO    O8  OO  OO  O8  8O  
+  OOOOO8 ~OOOOOO    +OO   OO    ~OOOOOO   OO  ~8O O8  $OO 
