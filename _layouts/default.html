@@ -1,0 +1,76 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>{{ page.title }} / Cluj Coworking Space</title>
+	<meta name="description" content="A Coworking Space in Cluj-Napoca, Transilvania">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+  <script src="js/libs/jquery.livetwitter.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="span3 logo">
+          <h1><span class="cluj">Cluj</span> Cowork</h1>
+          <h5>Hosted by RubyTribe</h5>
+        </div>
+        <div class="span4">&nbsp;</div>
+        <div class="span5 info">
+          <h3>First coworking space in Cluj-Napoca, Transilvania</h3>
+          <p>
+            <a href="http://twitter.com/clujcowork">@clujcowork</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    {{ content }}
+
+    <hr>
+
+    <footer>
+      <div class="row">
+        <div class="span6">
+          <p>
+            Coworking in Cluj-Napoca since 2012.
+          </p>
+          <p class="help-block">
+            <small>Last update: {{ site.time }}</small>
+          </p>
+        </div>
+        <div class="location span6">
+          <div class="vcard">
+            <div class="adr">
+              <div class="street-address">23rd Emil Isac</div>
+              <span class="locality">Cluj-Napoca</span>,
+              <span class="region">Cluj</span>,
+              <span class="postal-code">400023</span>
+              <span class="country-name">Romania</span>
+            </div>
+            <div class="tel">{{ site.phone }}</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div> <!-- .container -->
+  <script>
+    var _gaq=[['_setAccount','{{ site.ga }}'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>

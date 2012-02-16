@@ -63,3 +63,20 @@ footer .location {
 [class^="icon-"] {
   background-image: url(../img/glyphicons-halflings.png) !important;
 }
+
+#twitter-stream {
+  margin-right: 10px;
+}
+
+.tweet .text{
+  border-bottom: 1px dotted #998765;
+}
+
+iframe {
+  width: 100% !important;
+  border: none;
+}
+
+#contact form {
+  margin-bottom: 0;
+}
