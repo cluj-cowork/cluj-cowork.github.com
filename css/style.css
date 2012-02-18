@@ -80,3 +80,12 @@ iframe {
 #contact form {
   margin-bottom: 0;
 }
+
+.modal.pic {
+  top: 35% !important;
+  max-height: 820px;
+}
+
+.modal.pic .modal-body {
+  padding: 5px 5px 0px;
+}
