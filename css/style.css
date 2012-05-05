@@ -89,3 +89,21 @@ iframe {
 .modal.pic .modal-body {
   padding: 5px 5px 0px;
 }
+
+.ruby,
+.ruby p,
+.ruby .details {
+  color: #444;
+  font-size: 14px;
+}
+
+.ruby h3,
+.ruby h4 {
+  color: #C00000;
+}
+
+.ruby .thumbnail h4,
+.ruby .thumbnail h5 {
+  color: #444;
+  text-align: center;
+}
