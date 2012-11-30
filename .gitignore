@@ -1,0 +1,5 @@
+*.sass-cache
+*/.DS_Store
+*.livereload
+_site
+assets/stylesheets
