@@ -1,0 +1,73 @@
+/* Generic Layout */
+
+body {
+  background: $bw_9;
+  color: $bw_3;
+}
+
+header {
+  background: $white;
+  padding-top: 30px;
+
+  .navigation {
+    font-size: $bw_2;
+    padding: 0;
+
+    ul {
+      li {
+        display: inline;
+        margin-right: 20px;
+
+        a {
+          color: $bw_2;
+        }
+        a:hover, a.current {
+          color: $mainColor;
+        }
+      }
+    }
+  }
+}
+
+#container {
+  background: $white;
+  min-height: 400px;
+}
+
+footer {
+  padding-top: 30px;
+  color: $bw_6;
+
+  .details {
+    padding: 0;
+  }
+
+  .red.stripe {
+    margin-top: -34px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .faded {
+    color: $bw_7;
+    font-size: $footerFontSizeFaded;
+  }
+}
+
+hr.red.stripe {
+  border-bottom: 4px solid $mainColor;
+  margin: 0;
+  padding: 0;
+}
+
+.vcard {
+  div {
+    padding-bottom: 10px;
+  }
+}
+
+// Homepage related stuff
+.homepage header {
+  .branding, hr.red.stripe {
+    display: none;
+  }
+}
