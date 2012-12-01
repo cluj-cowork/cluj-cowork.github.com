@@ -66,8 +66,10 @@ hr.red.stripe {
 }
 
 // Homepage related stuff
-.homepage header {
-  .branding, hr.red.stripe {
-    display: none;
+.homepage {
+  header, footer {
+    .branding, hr.red.stripe {
+      display: none;
+    }
   }
 }
