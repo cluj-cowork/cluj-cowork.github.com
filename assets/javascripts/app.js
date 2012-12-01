@@ -18,7 +18,7 @@
     enableImagesGrid: function( selector ) {
       $( selector ).gridrotator( {
         rows : 4,
-        columns : 15,
+        columns : 20,
         animType : 'random',
         w1024 : {
           rows : 5,
