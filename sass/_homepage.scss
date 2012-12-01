@@ -1,6 +1,6 @@
 .branding-huge {
   background: $mainColor;
-  padding: 40px;
+  padding: 40px 0;
 
   .overlay {
     background: $white;
@@ -8,6 +8,7 @@
     position: relative;
     top: 250px;
     margin-top: -150px;
+    z-index: 10;
 
     h1 {
       color: $bw_3;
