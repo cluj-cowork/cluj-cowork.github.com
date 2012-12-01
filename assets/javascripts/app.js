@@ -7,6 +7,14 @@
       this.resizeStripes();
       $( window ).resize( this.resizeStripes );
     },
+    // Twitter feed widget
+    liveTwitter: function( selector ) {
+      $( selector ).liveTwitter( 'clujcowork', {
+        mode: 'user_timeline',
+        limit: 4,
+        refresh: true
+      });
+    },
     // Handles resize of stripes, elements that should act fluid
     resizeStripes: function() {
       // Available width - grid width

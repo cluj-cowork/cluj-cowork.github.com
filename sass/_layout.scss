@@ -59,6 +59,11 @@ header {
     p {
       font-size: $sidebarFontSize;
     }
+
+    .tweet .time {
+      display: block;
+      font-style: italic;
+    }
   }
 }
 
