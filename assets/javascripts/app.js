@@ -7,6 +7,35 @@
       this.resizeStripes();
       $( window ).resize( this.resizeStripes );
     },
+    // Google Calendar feed
+    eventsList: function( selector ) {
+      $( selector ).gCalFlow({
+        calid: 'lfupe8c94ukh4cor2246bhtems@group.calendar.google.com',
+        mode: 'upcoming',
+        maxitem: 20,
+        auto_scroll: false,
+        daterange_formatter: function ( start_date, end_date, allday_p ) {
+          return start_date.toLocaleDateString() + ', ' +
+            start_date.toLocaleTimeString() + ' &mdash; ' +
+            end_date.toLocaleDateString() + ', ' +
+            end_date.toLocaleTimeString();
+        }
+      });
+    },
+    // Google Calendar feed widget
+    eventsWidget: function( selector ) {
+      $( selector ).gCalFlow({
+        calid: 'lfupe8c94ukh4cor2246bhtems@group.calendar.google.com',
+        mode: 'upcoming',
+        maxitem: 5,
+        auto_scroll: false,
+        link_item_title: false,
+        daterange_formatter: function ( start_date, end_date, allday_p ) {
+          return start_date.getDate() + '/' + start_date.getMonth() + '/' +
+            start_date.getFullYear() + ' ' + start_date.toLocaleTimeString();
+        }
+      });
+    },
     // Twitter feed widget
     liveTwitter: function( selector ) {
       $( selector ).liveTwitter( 'clujcowork', {

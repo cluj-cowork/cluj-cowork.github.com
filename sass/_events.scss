@@ -1,0 +1,37 @@
+#container {
+  .content {
+    h4, h4 a {
+      color: $bw_3;
+      font-weight: 200;
+    }
+
+    .gcf-item-daterange {
+      font-style: italic;
+      color: $bw_6;
+    }
+
+    .gcf-last-update-block {
+      color: $bw_7;
+      font-size: 8pt;
+      text-align: right;
+    }
+  }
+
+  .sidebar {
+    .gcf-item-block {
+      clear: both;
+
+      em {
+        font-style: normal;
+      }
+
+      div {
+        display: inline;
+      }
+
+      .gcf-item-daterange {
+        color: $mainColor;
+      }
+    }
+  }
+}
