@@ -14,12 +14,34 @@ class_name: about
   </div>
 
   <div class="four offset-by-one columns sidebar">
-    <h3>Twitter Feed</h3>
-    <p></p>
+    <h3><a href="https://twitter.com/clujcowork">Twitter Feed</a></h3>
+    <div id="twitter-feed"></div>
 
     <hr>
 
-    <h3>Upcoming</h3>
-    <p></p>
+    <h3><a href="/events">Upcoming</a></h3>
+    <div id="events-widget">
+      <div class="gcf-item-container-block">
+        <div class="gcf-item-block">
+          <p class="gcf-item-header-block">
+            <em class="gcf-item-date-block">
+              <span class="gcf-item-daterange"></span>
+            </em>
+            &mdash;
+            <em class="gcf-item-title-block">
+              <span class="gcf-item-title"></span>
+            </em>
+          </p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function() {
+    ClujCowork.liveTwitter( '#twitter-feed' );
+    ClujCowork.eventsWidget( '#events-widget' );
+  });
+</script>

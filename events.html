@@ -8,18 +8,58 @@ class_name: events
   <div class="seven columns content">
     <hr class="grey stripe">
     <h2>Events</h2>
-    <p>
-     Lots of text. Love.
-    </p>
+    <div id="events-list">
+      <div class="gcf-item-container-block">
+        <div class="gcf-item-block">
+          <div class="gcf-item-header-block">
+            <div class="gcf-item-title-block">
+              <h4 class="gcf-item-title"></h4>
+            </div>
+            <div class="gcf-item-date-block">
+              <p class="gcf-item-daterange"></p>
+            </div>
+          </div>
+          <div class="gcf-item-body-block">
+            <p class="gcf-item-description"></p>
+          </div>
+        </div>
+      </div>
+      <div class="gcf-last-update-block">
+        Last Update: <span class="gcf-last-update"></span>
+      </div>
+    </div>
   </div>
 
   <div class="four offset-by-one columns sidebar">
-    <h3>Twitter Feed</h3>
-    <p></p>
+    <h3><a href="https://twitter.com/clujcowork">Twitter Feed</a></h3>
+    <div id="twitter-feed"></div>
 
     <hr>
 
-    <h3>Upcoming</h3>
-    <p></p>
+    <h3><a href="/events">Upcoming</a></h3>
+    <div id="events-widget">
+      <div class="gcf-item-container-block">
+        <div class="gcf-item-block">
+          <p class="gcf-item-header-block">
+            <em class="gcf-item-date-block">
+              <span class="gcf-item-daterange"></span>
+            </em>
+            &mdash;
+            <em class="gcf-item-title-block">
+              <span class="gcf-item-title"></span>
+            </em>
+          </p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function() {
+    ClujCowork.liveTwitter( '#twitter-feed' );
+    ClujCowork.eventsList( '#events-list' );
+    ClujCowork.eventsWidget( '#events-widget' );
+  });
+</script>
