@@ -1,0 +1,18 @@
+.branding-huge {
+  background: $mainColor;
+  padding: 40px;
+
+  .overlay {
+    background: $white;
+    background: rgba(255, 255, 255, 0.9);
+    position: relative;
+    top: 250px;
+    margin-top: -150px;
+
+    h1 {
+      color: $bw_3;
+      font-size: $headingFontSize;
+      font-weight: 200;
+    }
+  }
+}
