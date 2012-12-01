@@ -32,6 +32,34 @@ header {
 #container {
   background: $white;
   min-height: 400px;
+
+  .grey.stripe {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .content {
+    h2 {
+      color: $mainColor;
+      font-size: $headingFontSize;
+      font-weight: 200;
+    }
+  }
+
+  .sidebar {
+    padding-left: 0;
+    margin-top: 90px;
+
+    h3 {
+      color: $mainColor;
+      font-size: $sidebarHeadingFontSize;
+      font-weight: 200;
+    }
+
+    p {
+      font-size: $sidebarFontSize;
+    }
+  }
 }
 
 footer {
@@ -67,7 +95,7 @@ hr.red.stripe {
 
 // Homepage related stuff
 .homepage {
-  header, footer {
+  header {
     .branding, hr.red.stripe {
       display: none;
     }
