@@ -1,8 +1,12 @@
 #container {
   .content {
-    h4, h4 a {
+    h4 {
       color: $bw_3;
-      font-weight: 200;
+      font-weight: 300;
+    }
+
+    .gcf-item-title {
+      margin-bottom: 5px;
     }
 
     .gcf-item-daterange {
