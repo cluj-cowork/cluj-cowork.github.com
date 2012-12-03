@@ -10,8 +10,26 @@
     // Handles Google form submission (ajaxified)
     handleGoogleForm: function( selector ) {
       $( selector ).on( 'submit', function() {
-        $( this ).hide();
-        $( this ).parent().find( '.success' ).show();
+        var $self = $( this );
+        $self.hide();
+
+        $.ajax({
+          type: "POST",
+          url: $self.attr( 'action' ),
+          data: {
+            "entry.0.single": $self.find( '#entry_0' ).val(),
+            "entry.1.single": $self.find( '#entry_1' ).val(),
+            "entry.2.single": $self.find( '#entry_2' ).val(),
+            "entry.3.single": $self.find( '#entry_3' ).val(),
+            formkey: "dFdHN2Y5Y1VURWlEV1A5TDJUUnhkRmc6MQ",
+            pageNumber: '',
+            backupCache: '',
+            submit: 'Submit'
+          }
+        }).done( function() {
+          $self.parent().find( '.success' ).show();
+        } );
+
         return false;
       } );
     },
