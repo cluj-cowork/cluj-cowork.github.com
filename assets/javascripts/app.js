@@ -7,6 +7,14 @@
       this.resizeStripes();
       $( window ).resize( this.resizeStripes );
     },
+    // Handles Google form submission (ajaxified)
+    handleGoogleForm: function( selector ) {
+      $( selector ).on( 'submit', function() {
+        $( this ).hide();
+        $( this ).parent().find( '.success' ).show();
+        return false;
+      } );
+    },
     // Google Calendar feed
     eventsList: function( selector ) {
       $( selector ).gCalFlow({
