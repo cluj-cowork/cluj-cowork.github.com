@@ -3,11 +3,22 @@
 body {
   background: $bw_9;
   color: $bw_3;
+  * {
+    line-height: 20px;
+  }
+
+  .aligncenter {
+    text-align: center;
+  }
+
+  .alignright {
+    text-align: right;
+  }
 }
 
 header {
   background: $white;
-  padding-top: 30px;
+  padding-top: 20px;
 
   .navigation {
     font-size: $bw_2;
@@ -42,7 +53,11 @@ header {
     h2 {
       color: $mainColor;
       font-size: $headingFontSize;
-      font-weight: 200;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: $paragraphFontSize;
     }
 
     margin-bottom: 60px;
@@ -56,11 +71,12 @@ header {
     h3 {
       color: $mainColor;
       font-size: $sidebarHeadingFontSize;
-      font-weight: 200;
+      font-weight: 300;
     }
 
     p {
       font-size: $sidebarFontSize;
+      color: $bw_6;
     }
 
     .tweet .time {
@@ -74,8 +90,16 @@ footer {
   padding-top: 30px;
   color: $bw_6;
 
+  .from-left p {
+    font-size: $footerFontSizeLeft;
+  }
+
   .details {
     padding: 0;
+
+    * {
+      font-size: $footerFontSize;
+    }
   }
 
   .red.stripe {
@@ -85,7 +109,6 @@ footer {
 
   .faded {
     color: $bw_7;
-    font-size: $footerFontSizeFaded;
   }
 }
 
@@ -105,6 +128,12 @@ hr.red.stripe {
 .homepage {
   header {
     .branding, hr.red.stripe {
+      display: none;
+    }
+  }
+
+  footer {
+    hr.red.stripe {
       display: none;
     }
   }
