@@ -69,6 +69,10 @@ header {
   .content {
     padding-right: 20px;
 
+    a:hover {
+      text-decoration: underline;
+    }
+
     h2 {
       color: $mainColor;
       font-size: $headingFontSize;
