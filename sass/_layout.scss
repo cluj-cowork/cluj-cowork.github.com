@@ -110,6 +110,10 @@ footer {
 
   .from-left p {
     font-size: $footerFontSizeLeft;
+    .love {
+      color: $mainColor;
+      font-size: $paragraphFontSize;
+    }
   }
 
   .details {
