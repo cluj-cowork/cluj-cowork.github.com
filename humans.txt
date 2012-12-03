@@ -1,7 +1,6 @@
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
-
 /* TEAM */
   Creators: @clujcowork inhabitants
   Site: http://clujcowork.ro
@@ -9,10 +8,10 @@
   Location: Cluj-Napoca, Transilvania
 
 /* THANKS */
-  GitHub: http://github.com
-  Nanoc: http://nanoc.stoneship.org
-  Twitter Bootstrap: http://twitter.github.com/bootstrap
-  Pics: Lucian Indrei
+  GitHub: http://pages.github.com/
+  Jekyll: http://jekyllrb.com/
+  Zurb Foundation: http://foundation.zurb.com/
+  Open Sans Font: http://www.google.com/webfonts/specimen/Open+Sans
 
 /* SITE */
   Standards: HTML5, CSS3
