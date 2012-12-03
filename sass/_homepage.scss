@@ -1,6 +1,7 @@
 .branding-huge {
   background: $mainColor;
-  padding: 40px 0;
+  padding: 60px 0 0 0;
+  height: 300px;
 
   .overlay {
     background: $white;
@@ -9,7 +10,7 @@
     top: 250px;
     margin-top: -150px;
     z-index: 10;
-    padding: 10px;
+    padding: 20px;
 
     h1 {
       color: $bw_3;
@@ -17,6 +18,10 @@
       font-weight: 300;
     }
   }
+}
+
+.mock-grid {
+  background: url("/assets/images/bg.jpg") top center;
 }
 
 .lots-of-friends {

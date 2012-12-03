@@ -1,6 +1,9 @@
 .ri-grid {
   position: relative;
   height: auto;
+
+  width: 960px !important;
+  margin: 0 auto;
 }
 
 .ri-grid ul {
@@ -39,7 +42,7 @@
   position: relative;
   display: block;
   overflow: hidden;
-  background: #000;
+  background: $mainColor;
 }
 
 .ri-grid ul li a{
@@ -65,7 +68,7 @@
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: #333;
+  background-color: $mainColor;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -126,6 +129,6 @@
   width: 30px;
   height: 30px;
   left: 50%;
-  margin: 100px 0 100px -15px;
+  margin: 225px 0 225px -15px;
   display: block;
 }
