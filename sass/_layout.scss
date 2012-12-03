@@ -26,6 +26,9 @@ body {
     text-transform: uppercase;
     border: none;
     @include single-box-shadow($mainColor, 0, 0, 0, 0);
+    &:hover {
+      text-decoration: none !important;
+    }
   }
 
   &.about .navigation .about { color: $mainColor }
