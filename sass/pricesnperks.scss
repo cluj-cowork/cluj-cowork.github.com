@@ -1,0 +1,16 @@
+.prices-n-perks {
+  #container .content {
+    .pricelist .columns {
+      &.first, &.second {
+        padding-right: 0;
+
+        ul {
+          border-right: none;
+        }
+      }
+      &.second, &.third {
+        padding-left: 0;
+      }
+    }
+  }
+}
