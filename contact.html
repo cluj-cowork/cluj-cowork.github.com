@@ -11,50 +11,34 @@ class_name: contact
 
     <iframe class="us-on-map" scrolling="no" src="https://maps.google.ro/maps?sll=45.942171,25.02008&amp;sspn=15.480341,33.815918&amp;cid=14242722275014482222&amp;ll=46.778668,23.585072&amp;spn=0.023511,0.04755&amp;z=14&amp;output=embed"></iframe>
 
-    <div class="row">
-      <div class="seven columns">
-        <h4>Get in touch</h4>
-
-        <div class="alert-box success" style="display: none">
-          Thank you, our response won't wait.
-        </div>
-
-        <!-- fugly google code -->
-        <form action="https://spreadsheets.google.com/spreadsheet/formResponse?formkey=dFdHN2Y5Y1VURWlEV1A5TDJUUnhkRmc6MQ&amp;theme=0AX42CRMsmRFbUy03NTAzM2Q4My03ODU1LTQ2NzItODI2YS1kZmU5YzdiMzZjOGQ&amp;ifq" method="post" id="ss-form" >
-          <label for="entry_0">Name</label>
-          <input type="text" name="entry.0.single" id="entry_0" required />
-
-          <label for="entry_1">Ocupation</label>
-          <input type="text" name="entry.1.single" id="entry_1" required />
-
-          <label for="entry_2">Email/Phone/Skype</label>
-          <input type="text" name="entry.2.single" id="entry_2" required />
-
-          <label for="entry_3">Message</label>
-          <textarea name="entry.3.single" rows="8" cols="30" id="entry_3" required></textarea>
-
-          <input type="hidden" name="pageNumber" value="0">
-          <input type="hidden" name="backupCache" value="">
-
-          <p>Please fill in all the fields above.</p>
-          <button type="submit" class="small button radius" name="submit">Send</button>
-        </form>
-        <!-- end of fugly google code -->
-      </div>
-
-      <div class="five columns">
-        <h4>Also find us</h4>
-
-        <ul class="disc">
-          <li><a href="https://plus.google.com/100801264105450882556/about">
-            On Google Plus</a></li>
-          <li><a href="https://twitter.com/clujcowork">
-            On Twitter</a></li>
-          <li><a href="https://www.facebook.com/ClujCowork">
-            On Facebook</a></li>
-        </ul>
-      </div>
+    <h4>Get in touch</h4>
+    <div class="alert-box success" style="display: none">
+      Thank you, our response won't wait.
     </div>
+
+    <!-- fugly google code -->
+    <form action="https://spreadsheets.google.com/spreadsheet/formResponse?formkey=dFdHN2Y5Y1VURWlEV1A5TDJUUnhkRmc6MQ&amp;theme=0AX42CRMsmRFbUy03NTAzM2Q4My03ODU1LTQ2NzItODI2YS1kZmU5YzdiMzZjOGQ&amp;ifq" method="post" id="ss-form" >
+      <label for="entry_0">Name</label>
+      <input type="text" name="entry.0.single" id="entry_0" required />
+
+      <label for="entry_1">Ocupation</label>
+      <input type="text" name="entry.1.single" id="entry_1" required />
+
+      <label for="entry_2">Email/Phone/Skype</label>
+      <input type="text" name="entry.2.single" id="entry_2" required />
+
+      <label for="entry_3">Message</label>
+      <textarea name="entry.3.single" rows="8" cols="30" id="entry_3" required></textarea>
+
+      <input type="hidden" name="pageNumber" value="0">
+      <input type="hidden" name="backupCache" value="">
+
+      <p class="alignright">
+        <small>Please fill in all the fields above.</small>
+      </p>
+      <button type="submit" class="small button radius" name="submit">Send</button>
+    </form>
+    <!-- end of fugly google code -->
   </div>
 
   <div class="four columns sidebar">
