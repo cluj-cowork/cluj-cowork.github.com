@@ -64,27 +64,27 @@
     enableImagesGrid: function( selector ) {
       $( selector ).gridrotator( {
         rows : 4,
-        columns : 20,
+        columns : 17,
         animType : 'random',
         w1024 : {
           rows : 5,
-          columns : 6
+          columns : 12
         },
         w768 : {
           rows : 5,
-          columns : 5
+          columns : 12
         },
         w480 : {
           rows : 6,
-          columns : 4
+          columns : 10
         },
         w320 : {
           rows : 7,
-          columns : 4
+          columns : 9
         },
         w240 : {
           rows : 7,
-          columns : 3
+          columns : 9
         },
       } );
     }
