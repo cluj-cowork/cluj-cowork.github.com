@@ -14,6 +14,17 @@ body {
   .alignright {
     text-align: right;
   }
+
+  hr.red.stripe {
+    border-top: 4px solid $mainColor;
+    margin: 0;
+    padding: 0;
+  }
+
+  .button {
+    font-weight: 300;
+    text-transform: uppercase;
+  }
 }
 
 header {
@@ -21,13 +32,12 @@ header {
   padding-top: 20px;
 
   .navigation {
-    font-size: $bw_2;
-    padding: 0;
-
     ul {
       li {
         display: inline;
         margin-right: 20px;
+        font-size: $headerFontSize;
+
 
         a {
           color: $bw_2;
@@ -64,7 +74,6 @@ header {
   }
 
   .sidebar {
-    padding-left: 0;
     margin-top: 90px;
     margin-bottom: 60px;
 
@@ -95,8 +104,6 @@ footer {
   }
 
   .details {
-    padding: 0;
-
     * {
       font-size: $footerFontSize;
     }
@@ -109,18 +116,6 @@ footer {
 
   .faded {
     color: $bw_7;
-  }
-}
-
-hr.red.stripe {
-  border-top: 4px solid $mainColor;
-  margin: 0;
-  padding: 0;
-}
-
-.vcard {
-  div {
-    padding-bottom: 10px;
   }
 }
 
