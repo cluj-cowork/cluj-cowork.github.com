@@ -114,21 +114,3 @@
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-
-.ri-grid-loading:after,
-.ri-grid-loading:before{
-  display: none;
-}
-
-.ri-loading-image{
-  display: none;
-}
-
-.ri-grid-loading .ri-loading-image{
-  position: relative;
-  width: 30px;
-  height: 30px;
-  left: 50%;
-  margin: 225px 0 225px -15px;
-  display: block;
-}
