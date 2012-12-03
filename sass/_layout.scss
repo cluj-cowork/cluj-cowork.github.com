@@ -25,6 +25,11 @@ body {
     font-weight: 300;
     text-transform: uppercase;
   }
+
+  &.about .navigation .about { color: $mainColor }
+  &.events .navigation .events { color: $mainColor }
+  &.prices-n-perks .navigation .prices-n-perks { color: $mainColor }
+  &.contact .navigation .contact { color: $mainColor }
 }
 
 header {
