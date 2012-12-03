@@ -11,6 +11,16 @@
       &.second, &.third {
         padding-left: 0;
       }
+
+      .title {
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+
+    h5 {
+      font-weight: 300;
+      font-size: $heading5FontSize;
     }
   }
 }
