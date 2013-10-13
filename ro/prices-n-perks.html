@@ -1,0 +1,113 @@
+---
+layout: default
+title: Preţuri şi Avantaje
+class_name: prices-n-perks
+---
+
+<div class="row">
+  <div class="six offset-by-one columns content">
+    <hr class="grey stripe">
+    <h2>Preţuri şi Avantaje</h2>
+    <p>
+      Filosofia noastră constă în flexibilitate, deci nu avem birouri dedicate, aşa
+      că puteţi folosi orice birou doriţi. Un pont din partea noastră: cu cât
+      veniţi mai repede, cu atât veţi avea mai multe opţiuni ;)
+    </p>
+    <p>
+      În funcţie de necesităţile şi afacerea dumneavoastră, puteţi alege unul din
+      pachetele de mai jos. Dacă totuşi aveţi cerinţe speciale, contactaţi-ne şi
+      vă vom răspunde cu o ofertă personalizată.
+    </p>
+    <p>
+      Diferenţa dintre ofertele de mai jos este numărul de zile pentru cât staţi la
+      Cowork. Ok, şi cât vă veţi distra, de asemenea. Cu cât rămâneţi mai mult,
+      cu atât mai bine! Afară de aceasta, fiecare ofertă include lucrul la una
+      din mesele sau birourile noastre, cafea gustoasă şi fructe proaspete,
+      accesul la baza noastră de contacte şi la toate evenimentele organizate
+      aici. Important de menţionat este că TVA-ul este inclus în preţuri.
+    </p>
+
+    <div class="row pricelist">
+      <div class="four columns first">
+        <ul class="pricing-table">
+          <li class="title">O zi</li>
+          <li class="price">10 &euro;</li>
+          <li class="description">Luni &ndash; Duminică</li>
+          <li class="bullet-item">8:00 &ndash; 20:00</li>
+          <li class="cta-button">&nbsp;</li>
+        </ul>
+      </div>
+
+      <div class="four columns second">
+        <ul class="pricing-table">
+          <li class="title">O lună</li>
+          <li class="price">140 &euro;</li>
+          <li class="description">Luni &ndash; Vineri</li>
+          <li class="bullet-item">8:00 &ndash; 20:00</li>
+          <li class="cta-button">Prima lună 120 &euro;</li>
+        </ul>
+      </div>
+
+      <div class="four columns third">
+        <ul class="pricing-table">
+          <li class="title">Săptămâna</li>
+          <li class="price">40 &euro;</li>
+          <li class="description">Luni &ndash; Vineri</li>
+          <li class="bullet-item">8:00 &ndash; 20:00</li>
+          <li class="cta-button">&nbsp;</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="aligncenter join">
+      <a href="/ro/contact.html" class="button radius">Contactați-ne</a>
+    </p>
+
+    <p class="panel">
+      Atmosfera, networking-ul şi distracţia de aici &ndash; nepreţuite!
+    </p>
+    <p>
+      Şi partea cea mai bună este că acestea le primiţi împreună cu oricare din
+      pachetele de mai sus.
+    </p>
+    <p>
+      Dacă aveţi orice întrebări, contactaţi-ne. Pentru mai multe informaţii despre
+      preţul găzduirii unui eveniment,
+      <a href='/ro/events.html'>vizitaţi secţiunea cu evenimente</a>.
+      Politica noastră este să personalizăm oferta în funcţie de necesităţile
+      dumneavoastră.
+    </p>
+  </div>
+
+  <div class="four end columns sidebar">
+    <h3><a href="https://twitter.com/clujcowork">Twitter Feed</a></h3>
+    <div id="twitter-feed"></div>
+
+    <hr>
+
+    <h3><a href="/ro/events">Upcoming</a></h3>
+    <div id="events-widget">
+      <div class="gcf-item-container-block">
+        <div class="gcf-item-block">
+          <p class="gcf-item-header-block">
+            <em class="gcf-item-date-block">
+              <span class="gcf-item-daterange"></span>
+            </em>
+            &mdash;
+            <em class="gcf-item-title-block">
+              <span class="gcf-item-title"></span>
+            </em>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    ClujCowork.liveTwitter( '#twitter-feed' );
+    ClujCowork.eventsWidget( '#events-widget' );
+  });
+</script>
