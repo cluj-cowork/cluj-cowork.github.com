@@ -55,7 +55,7 @@
         mode: 'upcoming',
         maxitem: 5,
         auto_scroll: false,
-        link_item_title: false,
+        // link_item_title: false,
         daterange_formatter: function ( start_date, end_date, allday_p ) {
           return start_date.getDate() + '/' + ( start_date.getMonth() + 1 ) + '/' +
             start_date.getFullYear() + ' ' + start_date.toLocaleTimeString();
