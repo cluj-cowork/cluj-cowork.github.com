@@ -21,6 +21,7 @@
             "entry.1.single": $self.find( '#entry_1' ).val(),
             "entry.2.single": $self.find( '#entry_2' ).val(),
             "entry.3.single": $self.find( '#entry_3' ).val(),
+            "entry.4.single": $self.find( '#entry_4' ).val(),
             formkey: "dFdHN2Y5Y1VURWlEV1A5TDJUUnhkRmc6MQ",
             pageNumber: '',
             backupCache: '',
