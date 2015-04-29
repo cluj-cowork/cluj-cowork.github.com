@@ -105,3 +105,29 @@
     ClujCowork.init();
   });
 })(jQuery, this);
+
+$(function(){
+  $('.mock-grid').on('mouseover', '#ri-grid > ul > li', function(){
+    var rect = $(this).position();
+    var str = $(this).html();
+    var stri = str.substring(str.lastIndexOf("url(&quot;")+10,str.lastIndexOf("&quot;);"));
+    content =  '<img src ="' + stri + '"">';
+    $('.tool-tip').html(content);
+
+    var topTreshold = $('.tool-tip').height()  + 10;
+    var leftTreshold = $('.tool-tip').width() / 3;
+    $('.tool-tip').css({
+     position: "absolute",
+     top: (rect.top + 50) + "px",
+     left: (rect.left + 200) + "px",
+     zIndex: 100,
+     display: 'box',
+
+   })
+
+  })
+
+  $('.mock-grid').on('mouseout', '#ri-grid > ul > li', function(){
+    $('.tool-tip').html("");
+  })
+})
