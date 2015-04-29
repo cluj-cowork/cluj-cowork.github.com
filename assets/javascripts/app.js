@@ -68,7 +68,7 @@
       // Available width - grid width
       var width = document.documentElement.offsetWidth - 1000;
       var $stripes = $( '.stripe' );
-      $stripes.filter( '.red' ).css( 'margin-right', '-' + ( width / 2 ) - 110 + 'px' );
+      $stripes.filter( '.red' ).css( 'margin-right', '-' + ( width / 2 ) - 30 + 'px' );
       $stripes.filter( '.grey' ).css( 'margin-left', '-' + ( width / 2 ) - 110 + 'px' );
     },
     // Enable homepage grid rotator
