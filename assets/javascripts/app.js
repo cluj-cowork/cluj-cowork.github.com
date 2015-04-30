@@ -68,7 +68,7 @@
       // Available width - grid width
       var width = document.documentElement.offsetWidth - 1000;
       var $stripes = $( '.stripe' );
-      $stripes.filter( '.red' ).css( 'margin-right', '-' + ( width / 2 ) - 110 + 'px' );
+      $stripes.filter( '.red' ).css( 'margin-right', '-' + ( width / 2 ) - 30 + 'px' );
       $stripes.filter( '.grey' ).css( 'margin-left', '-' + ( width / 2 ) - 110 + 'px' );
     },
     // Enable homepage grid rotator
@@ -105,3 +105,31 @@
     ClujCowork.init();
   });
 })(jQuery, this);
+
+$(function(){
+  $('.mock-grid').on('mouseover', '#ri-grid > ul > li', function(){
+    var rect = $(this).position();
+    var str = $(this).html();
+    var stri = str.substring(str.lastIndexOf("/assets"),str.lastIndexOf(");"));
+    stri = stri.replace("&quot;", "");
+
+    content =  '<img src ="' + stri + '"">';
+    $('.tool-tip').html(content);
+
+    var topTreshold = $('.tool-tip').height()  + 10;
+    var leftTreshold = $('.tool-tip').width() / 3;
+    $('.tool-tip').css({
+     width: 'auto',
+     position: "absolute",
+     top: (rect.top - topTreshold) + "px",
+     left: (rect.left - leftTreshold) + "px",
+     zIndex: 100,
+     display: 'box'
+   })
+
+  })
+
+  $('.mock-grid').on('mouseout', '#ri-grid > ul > li', function(){
+    $('.tool-tip').html("");
+  })
+})
