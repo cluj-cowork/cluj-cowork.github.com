@@ -110,7 +110,10 @@ $(function(){
   $('.mock-grid').on('mouseover', '#ri-grid > ul > li', function(){
     var rect = $(this).position();
     var str = $(this).html();
-    var stri = str.substring(str.lastIndexOf("url(&quot;")+10,str.lastIndexOf("&quot;);"));
+    var stri = str.substring(str.lastIndexOf("/assets"),str.lastIndexOf(");"));
+    stri = stri.replace("&quot;", "");
+    console.log(stri)
+
     content =  '<img src ="' + stri + '"">';
     $('.tool-tip').html(content);
 
