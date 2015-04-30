@@ -112,7 +112,6 @@ $(function(){
     var str = $(this).html();
     var stri = str.substring(str.lastIndexOf("/assets"),str.lastIndexOf(");"));
     stri = stri.replace("&quot;", "");
-    console.log(stri)
 
     content =  '<img src ="' + stri + '"">';
     $('.tool-tip').html(content);
@@ -120,12 +119,12 @@ $(function(){
     var topTreshold = $('.tool-tip').height()  + 10;
     var leftTreshold = $('.tool-tip').width() / 3;
     $('.tool-tip').css({
+     width: 'auto',
      position: "absolute",
-     top: (rect.top + 50) + "px",
-     left: (rect.left + 200) + "px",
+     top: (rect.top - topTreshold) + "px",
+     left: (rect.left - leftTreshold) + "px",
      zIndex: 100,
-     display: 'box',
-
+     display: 'box'
    })
 
   })
